@@ -1,0 +1,42 @@
+/* Base Application Styles */
+.clear{
+  clear: both;
+}
+.clear:after{
+  content: "";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.fl{
+  float:left;
+}
+.ml240{
+  margin-left: 240px;
+}
+.product-list{
+  width: 180px;
+  margin: 6px;
+}
+.product-list img{
+  width: 180px;
+  height: 180px;
+}
+.main-index{
+  width: 900px;
+  margin-left: 10px;
+}
+.main-index p{
+  color: #dddd39;
+}
+.main-index a{
+  display: block;
+  word-wrap:break-word;
+  word-break:break-all;
+  line-height: 1.5;
+  height: 36px;
+}
+.container-main{
+  width: 1200px;
+  margin: 0 auto;
+}
