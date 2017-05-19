@@ -23,11 +23,12 @@ export const inaddproduct = productId => ({
   productId: productId
 })
 
+export const decproduct = productId => ({
+  type: types.DEL_PRODUCT,
+  productId: productId
+})
 
-export const addcount = (productId) => {
-  dispatch(types.ADD_COUNT, productId)
-}
-
-export const deccount = (productId) => dispatch => {
-  dispatch(types.DEC_COUNT, productId)
-}
+export const deccount = productId => ({
+  type: types.DEL_COUNT,
+  productId: productId
+})

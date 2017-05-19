@@ -21,7 +21,7 @@ class Index extends React.Component{
           <div id={product.id} className="product-list fl" key={'a'+product.id}>
             <img src={'../images/'+product.src} alt=""/>
             <p>{product.price}</p>
-            <Link to={'/detal/'+product.id}>{product.name}</Link>
+            <Link to={'/detail/'+product.id}>{product.name}</Link>
           </div>
         )}
         </QueueAnim>

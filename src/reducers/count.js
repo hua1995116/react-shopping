@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/5/12.
  */
-import {RECEIVE_PRODUCTS, ADD_PRODUCT} from '../constants/ActionTypes'
+import {RECEIVE_PRODUCTS} from '../constants/ActionTypes'
 import { combineReducers } from 'redux'
 // const count = (state = [], action) => {
 //   switch (action.type) {
@@ -11,16 +11,7 @@ import { combineReducers } from 'redux'
 //       return state
 //   }
 // }
-const products = (state, action) => {
-  switch (action.type) {
-    case ADD_PRODUCT:
-      return {
-        ...state
-      }
-    default:
-      return state
-  }
-}
+
 const byId = (state = {}, action) => {
   switch (action.type) {
     case RECEIVE_PRODUCTS:
@@ -32,13 +23,6 @@ const byId = (state = {}, action) => {
         }, {})
       }
     default:
-      // const { productId } = action
-      // if (productId) {
-      //   return {
-      //     ...state,
-      //     [productId]: products(state[productId], action)
-      //   }
-      // }
       return state
   }
 }

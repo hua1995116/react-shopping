@@ -11,6 +11,9 @@
 .fl{
   float:left;
 }
+.fr{
+  float:right;
+}
 .ml240{
   margin-left: 240px;
 }
@@ -40,3 +43,115 @@
   width: 1200px;
   margin: 0 auto;
 }
+/*detail*/
+.detail{
+  margin-left: 10px;
+}
+.detail-header{
+  padding: 10px 10px 10px 0;
+}
+.detail-content{
+
+}
+.detail .num{
+  display: inline-block;
+  border: 1px solid #ddd;
+  min-width: 10px;
+  padding: 0 9px;
+  line-height: 28px;
+  margin: 0 4px 4px 0;
+}
+.detail .content-right{
+  margin-left: 10px;
+}
+.detail .mashu{
+  margin-top:20px;
+}
+.detail .buy{
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 178px;
+  margin: 20px 0 0 20px;
+  background-color: #c40000;
+  border: 1px solid #c40000;
+  color: #ffeded;
+  text-align: center;
+  line-height: 28px;
+}
+.detail .toggle-add{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  background:#c40000;
+  color:#fff;
+  border-radius: 100%;
+}
+.detail .detail-cart{
+  margin: 20px 0 0 20px;
+}
+.detail .toggle-num{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+
+
+/*cart-list*/
+.cart-list{
+  width: 900px;
+  margin-left: 10px;
+}
+.cart-list-title{
+  line-height: 30px;
+}
+.cart-list-li{
+  margin-top:10px;
+  padding-top: 5px;
+  background: #fcfcfc;
+  border: 1px solid #ccc;
+}
+.cart-list-li img{
+  width: 80px;
+  height: 80px;
+}
+.cart-list-li .text{
+
+}
+.cart-list .total{
+  width: 100%;
+  margin-top:20px;
+  height: 50px;
+  background: #e5e5e5;
+}
+.cart-list .total-all{
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  background: #f40;
+  text-align: center;
+  font-size: 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+.cart-list .total-font{
+  font-weight: 700;
+  font-size: 22px;
+  padding: 0 3px;
+  color: #f40;
+  line-height: 50px;
+}
+.cart-list .total-font 。total-symbol{
+  font-size: 14px;
+  font-family: verdana;
+}
+

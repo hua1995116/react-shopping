@@ -30,19 +30,9 @@ const Basic = ({count}) => (
           mode="inline"
         >
           <SubMenu key="sub1" title={<span><Icon type="mail"/><span>Navigation One</span></span>}>
-            <Menu.Item key="1"><Link to="/">Index</Link></Menu.Item>
-            <Menu.Item key="2"><Link to="/about">About</Link></Menu.Item>
-            <Menu.Item key="3"><Link to="/topics">Topics</Link></Menu.Item>
-          </SubMenu>
-          <SubMenu key="sub2" title={<span><Icon type="appstore"/><span>Navigation Two</span></span>}>
-            <Menu.Item key="5">Option 5</Menu.Item>
-            <Menu.Item key="6">Option 6</Menu.Item>
-          </SubMenu>
-          <SubMenu key="sub4" title={<span><Icon type="setting"/><span>Navigation Three</span></span>}>
-            <Menu.Item key="9">Option 9</Menu.Item>
-            <Menu.Item key="10">Option 10</Menu.Item>
-            <Menu.Item key="11">Option 11</Menu.Item>
-            <Menu.Item key="12">Option 12</Menu.Item>
+            <Menu.Item key="1"><Link to="/">主页</Link></Menu.Item>
+            <Menu.Item key="2"><Link to="/about">购物车</Link></Menu.Item>
+            <Menu.Item key="3"><Link to="/topics">购买记录</Link></Menu.Item>
           </SubMenu>
         </Menu>
       </div>
@@ -50,7 +40,7 @@ const Basic = ({count}) => (
       <Route exact path="/" component={Index} count={count}/>
       <Route path="/about" component={Destination}/>
       <Route path="/topics" component={Plan}/>
-      <Route path="/detal/:topicId" component={Detail}/>
+      <Route path="/detail/:topicId" component={Detail}/>
     </div>
   </Router>
 )

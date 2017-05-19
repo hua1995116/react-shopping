@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/5/15.
  */
-import {ADD_PRODUCT, ADD_COUNT, DEC_COUNT} from '../constants/ActionTypes'
+import {ADD_PRODUCT, DEL_PRODUCT, DEL_COUNT} from '../constants/ActionTypes'
 
 const initialState = {
   addedIds: [],
@@ -29,6 +29,10 @@ const addIds = (state = initialState.addedIds, action) => {
     //     state.splice(action.productId,1);
     //     return state
     //   }
+    case DEL_PRODUCT:
+      var id = state.indexOf(action.productId)
+      state.splice(id, 1)
+      return state
     default:
       return state
   }
@@ -36,10 +40,22 @@ const addIds = (state = initialState.addedIds, action) => {
 const quantityId = (state = initialState.quantityById, action) => {
   switch (action.type) {
     case ADD_PRODUCT:
-      const {productId} = action
+      var {productId} = action
       return {
         ...state,
         [productId]: (state[productId] || 0) + 1
+      };
+    case DEL_COUNT:
+      var {productId} = action
+      if (state[productId] === 1) {
+        delete state[productId]
+        return {
+          ...state
+        }
+      }
+      return {
+        ...state,
+        [productId]: state[productId] - 1
       }
     default:
       return state
