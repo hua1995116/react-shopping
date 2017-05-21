@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/5/15.
  */
-import {ADD_PRODUCT, DEL_PRODUCT, DEL_COUNT} from '../constants/ActionTypes'
+import {ADD_PRODUCT, DEL_PRODUCT, DEL_COUNT, CLEAR_PRODUCT} from '../constants/ActionTypes'
 
 const initialState = {
   addedIds: [],
@@ -18,23 +18,17 @@ const addIds = (state = initialState.addedIds, action) => {
         ...state,
         action.productId
       ]
-    // case ADD_COUNT:
-    //   state[action.productId].count++
-    //   return state
-    // case DEC_COUNT:
-    //   if(state[action.productId].count > 0){
-    //     state[action.productId].count--
-    //     return state
-    //   }else{
-    //     state.splice(action.productId,1);
-    //     return state
-    //   }
     case DEL_PRODUCT:
       var id = state.indexOf(action.productId)
       state.splice(id, 1)
       return state
+    case CLEAR_PRODUCT:
+      state = []
+      return state
     default:
       return state
+
+
   }
 }
 const quantityId = (state = initialState.quantityById, action) => {
@@ -57,6 +51,9 @@ const quantityId = (state = initialState.quantityById, action) => {
         ...state,
         [productId]: state[productId] - 1
       }
+    case CLEAR_PRODUCT:
+      state = {}
+      return state
     default:
       return state
   }

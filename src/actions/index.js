@@ -9,10 +9,6 @@ const receiveProducts = products => ({
 })
 
 export const getAllProducts = () => dispatch => {
-  // shop.getProducts(products => {
-  //   console.log(products)
-  //   dispatch(receiveProducts(products))
-  // })
   fetch('../api/shop.json')
     .then(response => response.json())
     .then(json => dispatch(receiveProducts(json)))
@@ -31,4 +27,14 @@ export const decproduct = productId => ({
 export const deccount = productId => ({
   type: types.DEL_COUNT,
   productId: productId
+})
+
+export const clearproduct = () => ({
+  type: types.CLEAR_PRODUCT
+})
+
+export const addhistory = (order,id) => ({
+  type:types.ADD_HISTORY,
+  id: id,
+  order: order
 })
