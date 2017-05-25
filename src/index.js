@@ -1,7 +1,7 @@
 import 'core-js/fn/object/assign'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { createStore ,applyMiddleware} from 'redux'
+import { createStore ,applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import Main from './components/Main'
 import { createLogger } from 'redux-logger'
@@ -11,13 +11,12 @@ import 'antd/dist/antd.css'
 import './styles/App.css'
 import { getAllProducts } from './actions'
 
-const middleware = [ thunk ];
+const middleware = [ thunk ]
 if (process.env.NODE_ENV !== 'production') {
-  middleware.push(createLogger());
+  middleware.push(createLogger())
 }
 
-const store = createStore(
-  reducer,
+const store = createStore(reducer,
   applyMiddleware(...middleware)
 )
 
@@ -28,6 +27,6 @@ ReactDOM.render(
      <Main />
    </Provider>
   ,document.getElementById('app')
-);
+)
 
 

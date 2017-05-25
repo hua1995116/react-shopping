@@ -14,11 +14,10 @@ class Destination extends React.Component {
   state = { visible: false }
   showModal = () => {
     this.setState({
-      visible: true,
-    });
+      visible: true
+    })
   }
-  handleOk = (e) => {
-    console.log(e);
+  handleOk = () => {
     const {cart,dispatch} = this.props
     const order = cart.addIds.reduce((obj,num)=>{
       obj[num] = cart.quantityId[num]
@@ -27,14 +26,13 @@ class Destination extends React.Component {
     dispatch(TodoActions.addhistory(order,new Date().getTime()))
     dispatch(TodoActions.clearproduct())
     this.setState({
-      visible: false,
-    });
+      visible: false
+    })
   }
-  handleCancel = (e) => {
-    console.log(e);
+  handleCancel = () => {
     this.setState({
-      visible: false,
-    });
+      visible: false
+    })
   }
 
   clearproduct = () => {

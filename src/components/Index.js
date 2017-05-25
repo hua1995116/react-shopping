@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom'
 import { getVisibleProducts } from '../reducers/count'
 
 const Index = ({count}) => (
-
       <div className="container fl main-index">
         <QueueAnim>
         {count.map(product =>

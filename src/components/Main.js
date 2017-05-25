@@ -12,8 +12,8 @@ import Index from './index'
 import Destination from './Destination'
 import Plan from './Plan'
 import Detail from './Detail'
-import {Menu, Icon} from 'antd';
-const SubMenu = Menu.SubMenu;
+import {Menu, Icon} from 'antd'
+const SubMenu = Menu.SubMenu
 
 const Basic = () => (
 
@@ -37,7 +37,7 @@ const Basic = () => (
       <Route exact path="/" component={Index}/>
       <Route path="/about" component={Destination}/>
       <Route path="/topics" component={Plan}/>
-      <Route path="/detail/:topicId" component={Detail}/>
+      <Route path="/detail/:topicId" component={Detail} />
     </div>
   </Router>
 )

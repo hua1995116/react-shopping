@@ -11,6 +11,7 @@ const Plan = ({count, history}) => {
     return new Date(parseInt(nS)).toLocaleString().replace(/:\d{1,2}$/,' ')
   }
   const list = () => {
+
     var lis = []
     for(let i in history){
       var mlis = []
