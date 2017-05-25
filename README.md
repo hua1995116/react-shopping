@@ -4,11 +4,30 @@
 
 github地址：https://github.com/hua1995116/react-shopping
 
+## 脚手架
+
+[generator-react-webpack](https://www.npmjs.com/package/generator-react-webpack)
+
+**Installation**
+
+```
+npm install -g yo
+npm install -g generator-react-webpack
+```
+
+**Setting up projects**
+
+```
+# Create a new directory, and `cd` into it:
+mkdir my-new-project && cd my-new-project
+ 
+# Run the generator
+yo react-webpack
+```
+
 ## 技术栈
 
 react+react-router+redux+ webpack + ES6 + fetch+antd
-
-
 
 ## 项目结构
 
@@ -220,3 +239,14 @@ export default connect()(Basic)
 运用了函数式编程方式：
 我们可以看看普通继承和函数式编程的差异，函数编程简洁了不少。也可以看到react-router在4.0版本后发生了一些变化。
 ![这里写图片描述](http://img.blog.csdn.net/20170525130009551?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYmx1ZWJsdWVza3lodWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+## 效果图
+![这里写图片描述](http://img.blog.csdn.net/20170525133053530?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYmx1ZWJsdWVza3lodWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+![这里写图片描述](http://img.blog.csdn.net/20170525133118375?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYmx1ZWJsdWVza3lodWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+![这里写图片描述](http://img.blog.csdn.net/20170525133131593?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYmx1ZWJsdWVza3lodWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+![这里写图片描述](http://img.blog.csdn.net/20170525133144187?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYmx1ZWJsdWVza3lodWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+![这里写图片描述](http://img.blog.csdn.net/20170525133157422?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYmx1ZWJsdWVza3lodWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
