@@ -137,7 +137,7 @@ npm run dist //打包
 
 ## 效果演示
 
-[http://www.qiufengh.com:8082](http://www.qiufengh.com:8082/)
+[http://47.95.208.249:8000](http://47.95.208.249:8000)
 
 ## 核心代码说明
 
