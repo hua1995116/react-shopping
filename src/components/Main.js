@@ -8,7 +8,7 @@ import {
   Link
 } from 'react-router-dom'
 import {connect} from 'react-redux'
-import Index from './index'
+import Index from './Index'
 import Destination from './Destination'
 import Plan from './Plan'
 import Detail from './Detail'
